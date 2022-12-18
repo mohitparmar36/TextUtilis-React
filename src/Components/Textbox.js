@@ -42,9 +42,9 @@ export default function Textbox(props) {
       <h1 className="heading">Enter the Text you want to Analyze</h1>
       <textarea className="form-control my-3" value={text}  id="" style={{backgroundColor : props.mode==='light'?'white':'#040614',color: props.mode==='light'?'black':'white'}} onChange={handleOnChange} rows="8"></textarea>
       <div className="button container">
-        <button className="btn btn-primary mx-1" onClick={changeToUp}>Change to Uppercase</button>
-        <button className="btn btn-primary mx-1" onClick={changeToLow}>Change to Lowercase</button>
-        <button className="btn btn-primary mx-1" onClick={removeSpace}>Remove White Space</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={changeToUp}>Change to Uppercase</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={changeToLow}>Change to Lowercase</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={removeSpace}>Remove White Space</button>
         <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>Copy Text</button>
         {/* <input className="form-control" type="text"  aria-label="default input example" value={count} onChange={handleOnChange2}></input>
         <button className="btn btn-primary mx-1" onClick={findChar}>Find Charecter</button> */}
