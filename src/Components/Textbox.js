@@ -41,7 +41,7 @@ export default function Textbox(props) {
     <div className={`text-${props.mode==='dark'?'light':'dark'}`}>
       <h1 className="heading">Enter the Text you want to Analyze</h1>
       <textarea className="form-control my-3" value={text}  id="" style={{backgroundColor : props.mode==='light'?'white':'#040614',color: props.mode==='light'?'black':'white'}} onChange={handleOnChange} rows="8"></textarea>
-      <div className="button container d-flex flex-row">
+      <div className="button container d-inline-flex">
         <button className="btn btn-primary mx-1 my-1" onClick={changeToUp}>Change to Uppercase</button>
         <button className="btn btn-primary mx-1 my-1" onClick={changeToLow}>Change to Lowercase</button>
         <button className="btn btn-primary mx-1 my-1" onClick={removeSpace}>Remove White Space</button>
